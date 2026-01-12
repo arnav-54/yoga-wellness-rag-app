@@ -51,8 +51,6 @@ This app uses the latest **Gemini AI models** to provide accurate, safe, and con
 - Node.js (v18+)
 - MongoDB Atlas account (or local MongoDB)
 - Google AI Studio API Key (Gemini)
-
 ---
-
 ```
 
