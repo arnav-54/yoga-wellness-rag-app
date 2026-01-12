@@ -1,51 +1,100 @@
-# YOGA AI PROJECT
+# Yoga Wellness AI – RAG Assistant
 
-A Node.js backend with Express and React frontend for yoga Q&A functionality with RAG-based responses.
+An intelligent **Yoga & Wellness assistant** built using **Retrieval-Augmented Generation (RAG)**.  
+This app uses the latest **Gemini AI models** to provide accurate, safe, and context-aware answers based on a curated yoga knowledge base.
 
-## Backend
-- Express server with CORS and safety detection
-- Health, ask, and feedback endpoints
-- Medical keyword filtering
-- RAG system with Gemini AI embeddings and FAISS vector store
-- Yoga knowledge base with 30+ entries
+---
 
-## Frontend  
-- React with Vite
-- Question submission form
-- Safety warnings for medical content
-- Error handling and loading states
+## ✨ Key Features
 
-## Setup
+- **Knowledge-Powered**  
+  Uses RAG to retrieve information from a dedicated yoga knowledge base via **FAISS Vector Store**.
 
-### Backend
+- **Gemini Integration**  
+  Powered by **gemini-flash-latest** for lightning-fast and accurate responses.
 
-1. Install dependencies:
+- **Persistence**  
+  All user interactions (queries, answers, sources) are stored in **MongoDB Atlas** using **Prisma ORM**.
+
+- **Feedback Loop**  
+  Integrated feedback mechanism allowing users to rate AI responses.
+
+- ⚡ **Modern UI**  
+  Sleek React frontend featuring:
+  - Responsive layout  
+  - Loading indicators (spinners)  
+  - Smooth fade-in animations for AI answers  
+  - Safety flags for sensitive medical queries  
+
+- 🧪 **Testing Suite**  
+  Built-in end-to-end automated testing to verify API and database health.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React (Vite), CSS3  
+- **Backend:** Node.js, Express  
+- **AI / LLM:** Google Gemini AI (`gemini-flash-latest`)  
+- **Embeddings:** `text-embedding-004`  
+- **Database:** MongoDB Atlas  
+- **ORM:** Prisma 5  
+- **Vector Store:** LangChain FAISS  
+- **Testing:** Node.js Custom Test Suite  
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v18+)
+- MongoDB Atlas account (or local MongoDB)
+- Google AI Studio API Key (Gemini)
+
+---
+
+### 🔧 Installation
+
+#### 1️⃣ Clone the Repository
 ```bash
-npm install
+git clone https://github.com/arnav-54/yoga-wellness-rag-app.git
+cd yoga-wellness-rag-app
+
 ```
 
-2. Configure environment variables:
-   - Copy `.env.example` to `.env`
-   - Add your Gemini API key to `.env`
+Backend Setup
 
-3. Build vector store (first time only):
-```bash
+cd backend
+npm install
+# Create a .env file based on .env.example
+npx prisma generate
+npm run dev
+
+Frontend Setup
+cd ../frontend
+npm install
+npm run dev
+
+Ingest Knowledge Base
+cd ../backend
 node scripts/ingest.js
-```
 
-4. Start server:
-```bash
-npm run dev
-```
+Project Structure
+├── backend/
+│   ├── prisma/             # Database Schema
+│   ├── scripts/            # Ingestion & Utility scripts
+│   ├── knowledge/          # Raw Yoga data (JSON/MD)
+│   ├── vector-store/       # Local vector database (FAISS)
+│   ├── test-suite.js       # E2E test runner
+│   └── server.js           # API Server
+├── frontend/
+│   ├── src/                # React App components
+│   └── App.jsx             # Main Application Logic
+└── README.md
 
-### Frontend
-```bash
-cd frontend
-npm install
-npm run dev
-```
+System Testing
 
-## API Endpoints
-- GET /health - Server health check
-- POST /ask - Submit questions (returns AI-generated answers with sources)
-- POST /feedback - Submit feedback
+cd backend
+node test-suite.js
+
