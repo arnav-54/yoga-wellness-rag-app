@@ -8,25 +8,25 @@ This app uses the latest **Gemini AI models** to provide accurate, safe, and con
 ## ✨ Key Features
 
 - **Knowledge-Powered**  
-  Uses RAG to retrieve information from a dedicated yoga knowledge base via **FAISS Vector Store**.
+  Uses RAG to retrieve information from a dedicated yoga knowledge base via a FAISS Vector Store.
 
 - **Gemini Integration**  
-  Powered by **gemini-flash-latest** for lightning-fast and accurate responses.
+  Powered by `gemini-flash-latest` for lightning-fast and accurate responses.
 
 - **Persistence**  
-  All user interactions (queries, answers, sources) are stored in **MongoDB Atlas** using **Prisma ORM**.
+  All user interactions (queries, answers, sources) are stored in MongoDB Atlas using Prisma ORM.
 
 - **Feedback Loop**  
   Integrated feedback mechanism allowing users to rate AI responses.
 
-- ⚡ **Modern UI**  
+- **Modern UI**  
   Sleek React frontend featuring:
   - Responsive layout  
   - Loading indicators (spinners)  
   - Smooth fade-in animations for AI answers  
   - Safety flags for sensitive medical queries  
 
-- 🧪 **Testing Suite**  
+- **Testing Suite**  
   Built-in end-to-end automated testing to verify API and database health.
 
 ---
@@ -48,9 +48,16 @@ This app uses the latest **Gemini AI models** to provide accurate, safe, and con
 
 ### Prerequisites
 
-- Node.js (v18+)
+- Node.js v18 or higher
 - MongoDB Atlas account (or local MongoDB)
 - Google AI Studio API Key (Gemini)
----
-```
 
+---
+
+## 🔧 Installation
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/arnav-54/yoga-wellness-rag-app.git
+cd yoga-wellness-rag-app
