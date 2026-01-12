@@ -67,6 +67,7 @@ Backend Setup
 
 cd backend
 npm install
+
 # Create a .env file based on .env.example
 npx prisma generate
 npm run dev
@@ -81,6 +82,7 @@ cd ../backend
 node scripts/ingest.js
 
 Project Structure
+
 ├── backend/
 │   ├── prisma/             # Database Schema
 │   ├── scripts/            # Ingestion & Utility scripts
@@ -92,6 +94,8 @@ Project Structure
 │   ├── src/                # React App components
 │   └── App.jsx             # Main Application Logic
 └── README.md
+
+
 
 System Testing
 
