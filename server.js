@@ -1,6 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
+const ragService = require('./services/ragService');
 
 const app = express();
 const PORT = 3001;
@@ -17,21 +18,48 @@ app.get('/health', (req, res) => {
   res.json({ status: 'ok' });
 });
 
-app.post('/ask', (req, res) => {
-  const { question } = req.body;
-  const isUnsafe = detectUnsafeQuery(question || '');
-  
-  res.json({
-    answer: 'Placeholder response',
-    sources: [],
-    isUnsafe
-  });
+app.post('/ask', async (req, res) => {
+  try {
+    const { question } = req.body;
+
+    if (!question || !question.trim()) {
+      return res.status(400).json({ error: 'Question is required' });
+    }
+
+    const isUnsafe = detectUnsafeQuery(question);
+
+    const { answer, sources } = await ragService.answerQuestion(question, isUnsafe);
+
+    res.json({
+      answer,
+      sources,
+      isUnsafe
+    });
+  } catch (error) {
+    console.error('Error processing question:', error);
+    res.status(500).json({
+      error: 'Failed to process question',
+      answer: 'I apologize, but I encountered an error. Please try again.',
+      sources: [],
+      isUnsafe: false
+    });
+  }
 });
 
 app.post('/feedback', (req, res) => {
   res.json({ message: 'Feedback received' });
 });
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+async function startServer() {
+  try {
+    await ragService.initialize();
+    app.listen(PORT, () => {
+      console.log(`Server running on port ${PORT}`);
+    });
+  } catch (error) {
+    console.error('Failed to start server:', error);
+    process.exit(1);
+  }
+}
+
+startServer();

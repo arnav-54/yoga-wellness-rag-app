@@ -1,0 +1,308 @@
+[
+    {
+        "id": "pose_001",
+        "title": "Mountain Pose (Tadasana)",
+        "category": "standing",
+        "level": "beginner",
+        "content": "Mountain Pose is a foundational standing posture in yoga. Stand with feet hip-width apart, distribute weight evenly across both feet. Engage thighs, lift kneecaps, and lengthen tailbone toward floor. Roll shoulders back and down, arms alongside body with palms facing forward. Align head over shoulders, chin parallel to floor. This pose improves posture, balance, and body awareness.",
+        "benefits": "Improves posture, strengthens thighs and ankles, firms abdomen and buttocks, relieves sciatica, reduces flat feet.",
+        "contraindications": "Headache, insomnia, low blood pressure."
+    },
+    {
+        "id": "pose_002",
+        "title": "Downward-Facing Dog (Adho Mukha Svanasana)",
+        "category": "inversion",
+        "level": "beginner",
+        "content": "Start on hands and knees. Spread fingers wide, press palms firmly into mat. Tuck toes and lift hips up and back, forming an inverted V-shape. Press heels toward floor, straighten legs without locking knees. Keep arms straight, shoulders away from ears. Head hangs freely between arms. This pose stretches hamstrings, calves, and spine while strengthening arms and legs.",
+        "benefits": "Stretches shoulders, hamstrings, calves, arches, and hands. Strengthens arms and legs. Energizes the body. Relieves headache, insomnia, back pain, and fatigue.",
+        "contraindications": "Carpal tunnel syndrome, pregnancy (late term), high blood pressure, headache."
+    },
+    {
+        "id": "pose_003",
+        "title": "Child's Pose (Balasana)",
+        "category": "resting",
+        "level": "beginner",
+        "content": "Kneel on mat with big toes touching, knees hip-width apart. Sit back on heels. Exhale and lower torso between thighs. Extend arms forward with palms down, or rest them alongside body with palms up. Forehead rests on mat. Breathe deeply, allowing body to relax completely. This is a gentle resting pose that calms the mind and relieves stress.",
+        "benefits": "Gently stretches hips, thighs, and ankles. Calms the brain and relieves stress and fatigue. Relieves back and neck pain when done with head and torso supported.",
+        "contraindications": "Diarrhea, pregnancy (use modifications), knee injury."
+    },
+    {
+        "id": "pose_004",
+        "title": "Warrior I (Virabhadrasana I)",
+        "category": "standing",
+        "level": "beginner",
+        "content": "Step feet 3-4 feet apart. Turn right foot out 90 degrees, left foot slightly in. Rotate hips to face right. Bend right knee over ankle, keeping knee aligned with second toe. Raise arms overhead, palms facing each other. Gaze forward or up at thumbs. Press into back foot, engage core. This pose builds strength and stamina.",
+        "benefits": "Strengthens shoulders, arms, and back muscles. Strengthens and stretches thighs and calves. Improves focus, balance, and stability. Encourages circulation and respiration. Stretches chest, lungs, shoulders, neck, and abdomen.",
+        "contraindications": "High blood pressure, heart problems, shoulder problems, neck problems."
+    },
+    {
+        "id": "pose_005",
+        "title": "Warrior II (Virabhadrasana II)",
+        "category": "standing",
+        "level": "beginner",
+        "content": "Step feet 3-4 feet apart. Turn right foot out 90 degrees, left foot slightly in. Keep hips open to the side. Bend right knee over ankle. Extend arms parallel to floor, palms down, reaching through fingertips. Gaze over right hand. Press outer edge of back foot down. This pose develops concentration and groundedness.",
+        "benefits": "Strengthens and stretches legs and ankles. Stretches groins, chest, and shoulders. Stimulates abdominal organs. Increases stamina. Relieves backaches, especially in second trimester of pregnancy.",
+        "contraindications": "Diarrhea, high blood pressure, neck problems."
+    },
+    {
+        "id": "pose_006",
+        "title": "Triangle Pose (Trikonasana)",
+        "category": "standing",
+        "level": "beginner",
+        "content": "Stand with feet 3-4 feet apart. Turn right foot out 90 degrees, left foot slightly in. Extend arms parallel to floor. Reach right arm forward, then lower it to shin, ankle, or floor. Left arm extends up, creating one line from left fingertips to right fingertips. Gaze at left thumb or forward. Keep both legs straight, chest open.",
+        "benefits": "Stretches and strengthens thighs, knees, and ankles. Stretches hips, groins, hamstrings, calves, shoulders, chest, and spine. Stimulates abdominal organs. Helps relieve stress. Improves digestion.",
+        "contraindications": "Diarrhea, headache, low blood pressure, neck problems, heart conditions."
+    },
+    {
+        "id": "pose_007",
+        "title": "Tree Pose (Vrksasana)",
+        "category": "balance",
+        "level": "beginner",
+        "content": "Stand in Mountain Pose. Shift weight to left foot. Place right foot on inner left thigh, calf, or ankle (avoid knee). Press foot and leg together. Bring hands to prayer position at chest. Once balanced, raise arms overhead. Find a steady focal point. Engage core, keep standing leg strong. This pose improves balance and focus.",
+        "benefits": "Improves balance and stability. Strengthens legs, ankles, and feet. Stretches groins, inner thighs, chest, and shoulders. Calms the mind and improves concentration.",
+        "contraindications": "High blood pressure (avoid raising arms overhead), insomnia, migraine."
+    },
+    {
+        "id": "pose_008",
+        "title": "Bridge Pose (Setu Bandha Sarvangasana)",
+        "category": "backbend",
+        "level": "beginner",
+        "content": "Lie on back with knees bent, feet hip-width apart, heels close to buttocks. Press feet and arms into floor. Lift hips toward ceiling. Clasp hands beneath pelvis, extend arms. Press shoulders and upper arms down. Lift chest toward chin. Hold for several breaths. Lower slowly with control.",
+        "benefits": "Stretches chest, neck, and spine. Strengthens back, buttocks, and hamstrings. Improves circulation. Stimulates abdominal organs, lungs, and thyroid. Calms the brain and reduces anxiety, stress, and depression.",
+        "contraindications": "Neck injury, pregnancy (late term), recent or chronic shoulder problems."
+    },
+    {
+        "id": "pose_009",
+        "title": "Cobra Pose (Bhujangasana)",
+        "category": "backbend",
+        "level": "beginner",
+        "content": "Lie face down with hands under shoulders, elbows close to body. Press tops of feet, thighs, and pelvis into floor. Straighten arms, lifting chest off floor. Keep shoulders down and back. Lift through the crown of head, avoiding crunching neck. Engage legs. This gentle backbend opens the chest.",
+        "benefits": "Strengthens the spine. Stretches chest, shoulders, and abdomen. Firms the buttocks. Stimulates abdominal organs. Opens the heart and lungs. Relieves stress and fatigue.",
+        "contraindications": "Back injury, carpal tunnel syndrome, headache, pregnancy."
+    },
+    {
+        "id": "pose_010",
+        "title": "Cat-Cow Pose (Marjaryasana-Bitilasana)",
+        "category": "warm-up",
+        "level": "beginner",
+        "content": "Start on hands and knees, wrists under shoulders, knees under hips. Inhale, drop belly, lift chest and tailbone (Cow). Exhale, round spine, tuck chin and tailbone (Cat). Flow between poses with breath. Move slowly and mindfully. This sequence warms the spine and improves flexibility.",
+        "benefits": "Stretches neck, chest, and spine. Massages and stimulates organs in the belly. Improves posture and balance. Creates emotional balance. Relieves stress and calms the mind.",
+        "contraindications": "Neck injury, recent back surgery, wrist problems."
+    },
+    {
+        "id": "pose_011",
+        "title": "Seated Forward Fold (Paschimottanasana)",
+        "category": "forward-bend",
+        "level": "intermediate",
+        "content": "Sit with legs extended forward. Inhale, raise arms overhead, lengthen spine. Exhale, hinge at hips, folding forward. Reach for feet, ankles, or shins. Keep spine long, avoid rounding back. Relax shoulders. Hold and breathe deeply. This pose deeply stretches the posterior chain.",
+        "benefits": "Calms the brain and relieves stress and mild depression. Stretches spine, shoulders, and hamstrings. Stimulates liver, kidneys, ovaries, and uterus. Improves digestion. Relieves symptoms of menopause and menstrual discomfort.",
+        "contraindications": "Asthma, diarrhea, back injury (perform only under supervision)."
+    },
+    {
+        "id": "pose_012",
+        "title": "Plank Pose (Phalakasana)",
+        "category": "core",
+        "level": "beginner",
+        "content": "Start in hands and knees. Step feet back, body in straight line from head to heels. Hands under shoulders, fingers spread wide. Engage core, thighs, and glutes. Keep neck neutral, gaze down. Press heels back, crown forward. Hold while breathing steadily. This pose builds core strength.",
+        "benefits": "Strengthens arms, wrists, and spine. Tones the abdomen. Builds stamina and endurance. Prepares body for more challenging arm balances.",
+        "contraindications": "Carpal tunnel syndrome, pregnancy (modifications needed), shoulder injury."
+    },
+    {
+        "id": "pose_013",
+        "title": "Pigeon Pose (Eka Pada Rajakapotasana)",
+        "category": "hip-opener",
+        "level": "intermediate",
+        "content": "From Downward-Facing Dog, bring right knee toward right wrist. Angle right shin under torso, right foot near left hip. Extend left leg back, top of foot on floor. Square hips to front of mat. Walk hands forward, lowering torso. Rest forehead on arms or mat. Hold and breathe deeply. This deeply opens hips.",
+        "benefits": "Stretches thighs, groins, psoas, abdomen, chest, shoulders, and neck. Stimulates abdominal organs. Opens shoulders and chest. Provides deep hip opening and release.",
+        "contraindications": "Ankle injury, knee injury, sacroiliac problems, tight hips (use modifications)."
+    },
+    {
+        "id": "pose_014",
+        "title": "Corpse Pose (Savasana)",
+        "category": "relaxation",
+        "level": "beginner",
+        "content": "Lie on back, legs comfortably apart, arms at sides with palms up. Close eyes. Relax entire body. Release all tension. Let breath be natural. Allow body to feel heavy. Stay for 5-15 minutes. This final relaxation integrates the practice and promotes deep rest.",
+        "benefits": "Calms the brain and relieves stress and mild depression. Relaxes the body. Reduces blood pressure. Reduces headache, fatigue, and insomnia. Helps to quiet the mind.",
+        "contraindications": "Back injury (use bolster under knees), pregnancy (elevate head and chest)."
+    },
+    {
+        "id": "pose_015",
+        "title": "Chair Pose (Utkatasana)",
+        "category": "standing",
+        "level": "beginner",
+        "content": "Stand with feet together. Inhale, raise arms overhead. Exhale, bend knees, sitting back as if into a chair. Keep weight in heels, knees behind toes. Draw belly in, lengthen spine. Sink hips lower while lifting chest. Hold and breathe. This strengthening pose builds heat.",
+        "benefits": "Strengthens thighs, calves, spine, and ankles. Stretches shoulders and chest. Stimulates abdominal organs, diaphragm, and heart. Reduces flat feet.",
+        "contraindications": "Headache, insomnia, low blood pressure, knee problems."
+    },
+    {
+        "id": "pose_016",
+        "title": "Camel Pose (Ustrasana)",
+        "category": "backbend",
+        "level": "intermediate",
+        "content": "Kneel with thighs perpendicular to floor, knees hip-width apart. Place hands on lower back for support. Inhale, lift chest. Exhale, arch back, reaching for heels one hand at a time. Keep hips over knees, thighs perpendicular. Press shins and tops of feet into floor. Open chest toward ceiling. This is a deep heart opener.",
+        "benefits": "Stretches entire front of body, ankles, thighs, groins, abdomen, chest, and throat. Strengthens back muscles. Improves posture. Stimulates organs of abdomen and neck.",
+        "contraindications": "High or low blood pressure, migraine, insomnia, serious low back or neck injury."
+    },
+    {
+        "id": "pose_017",
+        "title": "Seated Twist (Ardha Matsyendrasana)",
+        "category": "twist",
+        "level": "intermediate",
+        "content": "Sit with legs extended. Bend right knee, place right foot outside left thigh. Bend left knee, tuck left foot near right hip. Inhale, lengthen spine. Exhale, twist right, placing right hand behind you, left elbow outside right knee. Gaze over right shoulder. This twist detoxifies and energizes.",
+        "benefits": "Stimulates liver and kidneys. Stretches shoulders, hips, and neck. Energizes the spine. Relieves menstrual discomfort, fatigue, sciatica, and backache. Improves digestion.",
+        "contraindications": "Back or spine injury, hernia, pregnancy."
+    },
+    {
+        "id": "pose_018",
+        "title": "Shoulder Stand (Sarvangasana)",
+        "category": "inversion",
+        "level": "advanced",
+        "content": "Lie on back. Lift legs and hips, supporting lower back with hands. Extend legs vertically, body weight on shoulders and upper arms. Keep neck neutral, chin away from chest. Elbows shoulder-width apart. Hold steadily. Exit slowly with control. Use blankets under shoulders to protect neck.",
+        "benefits": "Calms the brain and relieves stress and mild depression. Stimulates thyroid and prostate glands. Stretches shoulders and neck. Tones legs and buttocks. Improves digestion. Reduces fatigue and alleviates insomnia.",
+        "contraindications": "Diarrhea, headache, high blood pressure, menstruation, neck injury, pregnancy."
+    },
+    {
+        "id": "pose_019",
+        "title": "Headstand (Sirsasana)",
+        "category": "inversion",
+        "level": "advanced",
+        "content": "Place forearms on mat, fingers interlaced. Place crown of head on floor, cradled by hands. Straighten legs, walk feet toward head. Engage core, lift feet off ground. Extend legs upward. Balance on forearms and head. Keep core engaged, legs active. Practice near wall initially. This is considered the king of asanas.",
+        "benefits": "Calms the brain and relieves stress and mild depression. Stimulates pituitary and pineal glands. Strengthens arms, legs, and spine. Improves digestion. Increases focus and relieves the symptoms of menopause.",
+        "contraindications": "Back injury, headache, heart condition, high blood pressure, menstruation, neck injury, pregnancy, glaucoma."
+    },
+    {
+        "id": "pose_020",
+        "title": "Legs-Up-the-Wall Pose (Viparita Karani)",
+        "category": "restorative",
+        "level": "beginner",
+        "content": "Sit sideways against wall. Swing legs up wall as you lower back to floor. Buttocks close to or touching wall. Arms rest at sides, palms up. Close eyes and relax completely. Stay 5-15 minutes. This gentle inversion is deeply restorative.",
+        "benefits": "Relieves tired or cramped legs and feet. Gently stretches hamstrings, lower back, and back of neck. Relieves mild backache. Calms anxiety. Regulates blood flow. Alleviates menstrual cramping.",
+        "contraindications": "Serious eye problems like glaucoma, serious neck or back injury."
+    },
+    {
+        "id": "breath_001",
+        "title": "Ujjayi Breathing (Victorious Breath)",
+        "category": "pranayama",
+        "level": "beginner",
+        "content": "Sit comfortably with spine erect. Inhale and exhale through nose. Slightly constrict back of throat, creating soft ocean-like sound. Breath should be smooth, controlled, and audible only to you. Maintain equal length of inhale and exhale. This breathing technique creates heat and focus.",
+        "benefits": "Increases oxygen intake. Builds internal heat. Improves concentration. Relieves tension. Calms the mind while warming the body. Enhances mindfulness during asana practice.",
+        "contraindications": "Low blood pressure, heart conditions (practice gently), headache."
+    },
+    {
+        "id": "breath_002",
+        "title": "Alternate Nostril Breathing (Nadi Shodhana)",
+        "category": "pranayama",
+        "level": "beginner",
+        "content": "Sit comfortably. Use right thumb to close right nostril. Inhale through left nostril. Close left nostril with ring finger, release right nostril. Exhale through right. Inhale through right. Close right, exhale through left. This is one cycle. Repeat 5-10 cycles. This balances nervous system.",
+        "benefits": "Balances left and right hemispheres of brain. Calms and rejuvenates nervous system. Reduces stress and anxiety. Improves concentration. Promotes clear breathing. Supports cardiovascular and respiratory health.",
+        "contraindications": "Nasal congestion (practice gently or avoid), high blood pressure (avoid breath retention)."
+    },
+    {
+        "id": "breath_003",
+        "title": "Belly Breathing (Diaphragmatic Breathing)",
+        "category": "pranayama",
+        "level": "beginner",
+        "content": "Lie on back or sit comfortably. Place one hand on chest, one on belly. Breathe deeply into belly, allowing it to rise on inhale. Chest remains relatively still. Exhale slowly, belly falls. Focus on slow, deep breaths. This activates the parasympathetic nervous system.",
+        "benefits": "Reduces stress and anxiety. Lowers blood pressure and heart rate. Strengthens diaphragm. Improves core stability. Increases oxygen intake. Promotes relaxation and better sleep.",
+        "contraindications": "None for basic practice. Those with COPD should consult healthcare provider."
+    },
+    {
+        "id": "breath_004",
+        "title": "Breath of Fire (Kapalabhati)",
+        "category": "pranayama",
+        "level": "intermediate",
+        "content": "Sit with spine straight. Take deep breath in. Exhale forcefully through nose using abdominal contraction. Inhale passively. Repeat rapid exhales 30-60 times. Finish with deep inhale, long exhale. This energizing breath cleanses respiratory system.",
+        "benefits": "Energizes and awakens the mind. Cleanses lungs and respiratory system. Strengthens abdominal muscles. Stimulates digestive organs. Clears nasal passages. Increases metabolic rate.",
+        "contraindications": "Pregnancy, high blood pressure, heart disease, hernia, gastric ulcer, epilepsy, vertigo, recent abdominal surgery."
+    },
+    {
+        "id": "concept_001",
+        "title": "Yoga for Stress Relief",
+        "category": "general",
+        "level": "beginner",
+        "content": "Yoga reduces stress through combination of physical movement, breath awareness, and meditation. Gentle poses like Child's Pose, Legs-Up-the-Wall, and Corpse Pose activate parasympathetic nervous system. Deep breathing techniques lower cortisol levels. Regular practice improves stress resilience and emotional regulation.",
+        "benefits": "Reduces cortisol and stress hormones. Lowers blood pressure and heart rate. Improves mood and emotional well-being. Enhances sleep quality. Builds resilience to future stressors.",
+        "contraindications": "Always consult healthcare provider if dealing with severe anxiety, depression, or other mental health conditions."
+    },
+    {
+        "id": "concept_002",
+        "title": "Yoga for Back Pain",
+        "category": "therapeutic",
+        "level": "beginner",
+        "content": "Gentle yoga can relieve chronic back pain. Cat-Cow stretches and mobilizes spine. Child's Pose gently decompresses lower back. Bridge Pose strengthens back muscles. Always move slowly, avoid pain. Focus on alignment and core engagement. Consistent practice improves flexibility and strength.",
+        "benefits": "Reduces chronic lower back pain. Improves spinal flexibility. Strengthens core and back muscles. Enhances body awareness and posture. Reduces inflammation.",
+        "contraindications": "Acute back injury, herniated disc, severe sciatica, recent surgery. Always consult healthcare provider before starting yoga for back pain."
+    },
+    {
+        "id": "concept_003",
+        "title": "Yoga for Flexibility",
+        "category": "general",
+        "level": "beginner",
+        "content": "Flexibility improves gradually through consistent practice. Focus on forward folds, hip openers, and gentle twists. Never force or bounce in poses. Hold stretches for 30-60 seconds, breathing deeply. Practice regularly, even 10-15 minutes daily shows progress. Flexibility varies day to day.",
+        "benefits": "Increases range of motion in joints. Reduces muscle tension and soreness. Improves posture and alignment. Decreases risk of injury. Enhances athletic performance.",
+        "contraindications": "Hypermobility or joint instability requires careful practice with emphasis on strengthening."
+    },
+    {
+        "id": "concept_004",
+        "title": "Yoga for Beginners",
+        "category": "general",
+        "level": "beginner",
+        "content": "Start with basic poses: Mountain Pose, Downward Dog, Child's Pose, Cat-Cow. Focus on breath awareness and alignment. Use props like blocks and straps. Practice 2-3 times weekly. Listen to your body, modify as needed. Consider beginner-friendly classes or online tutorials. Progress gradually.",
+        "benefits": "Builds foundation for safe practice. Develops body awareness. Improves strength and flexibility gradually. Reduces injury risk. Builds confidence and understanding of yoga principles.",
+        "contraindications": "Always inform instructor of injuries or health conditions. Modify poses as needed. Never push into pain."
+    },
+    {
+        "id": "concept_005",
+        "title": "Breathing Fundamentals in Yoga",
+        "category": "pranayama",
+        "level": "beginner",
+        "content": "Breath is foundation of yoga practice. Most breathing occurs through nose. Inhale to create space and length. Exhale to deepen and release. Breath guides movement - inhale for upward/opening movements, exhale for downward/folding movements. Smooth, controlled breath indicates appropriate intensity.",
+        "benefits": "Enhances mind-body connection. Increases oxygen delivery. Activates relaxation response. Improves concentration. Regulates nervous system. Supports safe movement in poses.",
+        "contraindications": "Avoid forced or strained breathing. Those with respiratory conditions should practice gently."
+    },
+    {
+        "id": "concept_006",
+        "title": "Yoga Props and Modifications",
+        "category": "general",
+        "level": "beginner",
+        "content": "Props make yoga accessible and safe. Blocks bring floor closer in standing poses and seated folds. Straps extend reach in binds and stretches. Bolsters support restorative poses. Blankets cushion joints and provide warmth. Using props isn't weakness - it's intelligence. Modify poses to suit your body.",
+        "benefits": "Makes poses accessible. Prevents injury. Allows proper alignment. Enables longer holds in restorative poses. Builds confidence. Supports healing and recovery.",
+        "contraindications": "None. Props enhance safety for all practitioners."
+    },
+    {
+        "id": "concept_007",
+        "title": "Morning Yoga Routine",
+        "category": "general",
+        "level": "beginner",
+        "content": "Morning yoga energizes body and mind. Start with gentle Cat-Cow to wake spine. Flow through Sun Salutations to build heat. Include standing poses like Warrior I and II. Finish with brief meditation or breathing. 15-20 minute practice sets positive tone for day. Practice on empty stomach if possible.",
+        "benefits": "Increases energy and alertness. Improves circulation. Sets positive intention for day. Enhances focus and productivity. Reduces morning stiffness.",
+        "contraindications": "Those with low blood pressure should practice gently and avoid sudden inversions in morning."
+    },
+    {
+        "id": "concept_008",
+        "title": "Evening Yoga for Relaxation",
+        "category": "general",
+        "level": "beginner",
+        "content": "Evening practice promotes relaxation and sleep. Focus on gentle forward folds, hip openers, and twists. Include restorative poses like Legs-Up-the-Wall. Practice deep breathing or meditation. Avoid vigorous or heating practices. Dim lighting enhances calming effect. Practice 30-60 minutes before bed.",
+        "benefits": "Reduces daily stress accumulation. Prepares body for sleep. Calms nervous system. Releases physical tension. Quiets mental chatter. Improves sleep quality.",
+        "contraindications": "Avoid inversions close to bedtime if they energize you. Keep practice gentle and cooling."
+    },
+    {
+        "id": "safety_001",
+        "title": "General Yoga Safety Guidelines",
+        "category": "safety",
+        "level": "beginner",
+        "content": "Practice on non-slip surface. Warm up before deep stretches. Never force or push into pain. Modify poses as needed. Stay hydrated. Avoid eating large meals 2-3 hours before practice. Inform instructors of injuries. Progress gradually. Rest when needed. Respect your body's limits each day.",
+        "benefits": "Prevents injuries. Supports sustainable practice. Builds body awareness. Reduces risk of strain or overexertion. Promotes longevity in practice.",
+        "contraindications": "Those with medical conditions should consult healthcare provider before starting yoga practice."
+    },
+    {
+        "id": "safety_002",
+        "title": "When to Avoid Certain Poses",
+        "category": "safety",
+        "level": "beginner",
+        "content": "Pregnancy: avoid deep twists, belly-down poses, closed twists. High blood pressure: avoid prolonged inversions, breath retention. Glaucoma: avoid inversions. Recent surgery: get medical clearance. Hernias: avoid core-intensive poses. Neck injury: avoid headstands, shoulder stands. Menstruation: avoid inversions (traditional guidance). Always listen to your body.",
+        "benefits": "Prevents complications. Supports healing. Maintains safety during vulnerable periods. Allows modification for individual needs.",
+        "contraindications": "Serious medical conditions require consultation with healthcare provider before practice."
+    }
+]
