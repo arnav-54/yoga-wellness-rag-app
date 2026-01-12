@@ -44,13 +44,90 @@ button:hover:not(:disabled) {
   background-color: #0056b3;
 }
 
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .response {
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 20px;
   background-color: #f9f9f9;
+  animation: fadeIn 0.5s ease-out;
 }
 
+/* Spinner */
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #007bff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Feedback Section */
+.feedback-section {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.feedback-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.feedback-btn {
+  background: none;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  transition: all 0.2s;
+  margin-top: 0;
+  /* Override default button margin */
+}
+
+.feedback-btn:hover {
+  background-color: #e9ecef;
+}
+
+.feedback-btn.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.feedback-message {
+  color: #28a745;
+  font-size: 0.9em;
+  margin-left: 10px;
+}
 .error {
   background-color: #f8d7da;
   border: 1px solid #f5c6cb;

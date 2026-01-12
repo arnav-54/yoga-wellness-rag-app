@@ -6,7 +6,7 @@ A Node.js backend with Express and React frontend for yoga Q&A functionality wit
 - Express server with CORS and safety detection
 - Health, ask, and feedback endpoints
 - Medical keyword filtering
-- RAG system with OpenAI embeddings and FAISS vector store
+- RAG system with Gemini AI embeddings and FAISS vector store
 - Yoga knowledge base with 30+ entries
 
 ## Frontend  
@@ -26,7 +26,7 @@ npm install
 
 2. Configure environment variables:
    - Copy `.env.example` to `.env`
-   - Add your OpenAI API key to `.env`
+   - Add your Gemini API key to `.env`
 
 3. Build vector store (first time only):
 ```bash

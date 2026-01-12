@@ -1,0 +1,21 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model Interaction {
+  id              String   @id @default(auto()) @map("_id") @db.ObjectId
+  userQuery       String
+  retrievedChunks String[] // Array of strings or JSON strings
+  finalAnswer     String
+  isUnsafe        Boolean  @default(false)
+  timestamp       DateTime @default(now())
+  
+  feedback        String?  // "positive" or "negative"
+  
+  @@map("interactions")
+}

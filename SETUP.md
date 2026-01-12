@@ -3,7 +3,7 @@
 ## Prerequisites
 - Node.js (v16 or higher)
 - npm
-- OpenAI API account
+- Google AI Studio account (for Gemini API)
 
 ## Step-by-Step Setup
 
@@ -23,20 +23,20 @@ npm install
 cd ..
 ```
 
-### 2. Configure OpenAI API Key
+### 2. Configure Gemini API Key
 
-Get an API key from OpenAI:
-1. Visit https://platform.openai.com/api-keys
-2. Sign in or create an account
+Get an API key from Google AI Studio:
+1. Visit https://aistudio.google.com/app/apikey
+2. Sign in with your Google account
 3. Create a new API key
 4. Copy the key
 
 Add the key to your environment:
 1. The `.env` file already exists in the root directory
-2. Open `.env` and replace `your_openai_api_key_here` with your actual API key:
+2. Open `.env` and replace `your_gemini_api_key_here` with your actual API key:
    ```
    PORT=3001
-   OPENAI_API_KEY=sk-your-actual-key-here
+   GEMINI_API_KEY=your-actual-key-here
    ```
 
 ### 3. Build Vector Store
@@ -50,7 +50,7 @@ npm run ingest
 This will:
 - Load 30+ yoga knowledge entries from `knowledge/yoga-data.json`
 - Create document chunks for efficient retrieval
-- Generate embeddings using OpenAI
+- Generate embeddings using Gemini AI
 - Build and save a FAISS vector store to `vector-store/`
 
 Expected output:
@@ -103,9 +103,9 @@ The frontend will typically start on port 5173.
 ### Vector Store Not Found
 If you see "Failed to initialize RAG service", make sure you ran `npm run ingest` first.
 
-### OpenAI API Errors
+### Gemini API Errors
 - Verify your API key is correct in `.env`
-- Check you have credits in your OpenAI account
+- Check your Gemini API quota at https://aistudio.google.com/
 - Ensure there are no extra spaces or quotes around the API key
 
 ### Port Already in Use

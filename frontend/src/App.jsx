@@ -6,6 +6,8 @@ function App() {
   const [response, setResponse] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [feedback, setFeedback] = useState(null);
+  const [feedbackSent, setFeedbackSent] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -14,7 +16,9 @@ function App() {
     setLoading(true);
     setResponse(null);
     setError(null);
-    
+    setFeedback(null);
+    setFeedbackSent(false);
+
     try {
       const res = await fetch('http://localhost:3001/ask', {
         method: 'POST',
@@ -23,11 +27,11 @@ function App() {
         },
         body: JSON.stringify({ question }),
       });
-      
+
       if (!res.ok) {
         throw new Error('Failed to get response');
       }
-      
+
       const data = await res.json();
       setResponse(data);
     } catch (error) {
@@ -37,10 +41,32 @@ function App() {
     }
   };
 
+  const handleFeedback = async (type) => {
+    if (!response?.interactionId) return;
+
+    setFeedback(type);
+
+    try {
+      await fetch('http://localhost:3001/feedback', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          interactionId: response.interactionId,
+          feedback: type
+        }),
+      });
+      setFeedbackSent(true);
+    } catch (error) {
+      console.error('Failed to send feedback', error);
+    }
+  };
+
   return (
     <div className="app">
       <h1>Q&A App</h1>
-      
+
       <form onSubmit={handleSubmit}>
         <textarea
           value={question}
@@ -50,9 +76,11 @@ function App() {
           disabled={loading}
         />
         <button type="submit" disabled={loading || !question.trim()}>
-          {loading ? 'Loading...' : 'Ask'}
+          {loading ? 'Asking AI...' : 'Ask'}
         </button>
       </form>
+
+      {loading && <div className="spinner"></div>}
 
       {error && (
         <div className="error">
@@ -60,14 +88,14 @@ function App() {
         </div>
       )}
 
-      {response && (
+      {response && !loading && (
         <div className="response">
           {response.isUnsafe && (
             <div className="warning">
               ⚠️ This question may contain sensitive medical content.
             </div>
           )}
-          
+
           <div className="answer">
             <h3>Answer:</h3>
             <p>{response.answer}</p>
@@ -84,6 +112,29 @@ function App() {
             ) : (
               <p>No sources available</p>
             )}
+          </div>
+
+          <div className="feedback-section">
+            <span>Was this helpful?</span>
+            <div className="feedback-buttons">
+              <button
+                type="button"
+                className={`feedback-btn ${feedback === 'positive' ? 'active' : ''}`}
+                onClick={() => handleFeedback('positive')}
+                disabled={feedbackSent}
+              >
+                👍
+              </button>
+              <button
+                type="button"
+                className={`feedback-btn ${feedback === 'negative' ? 'active' : ''}`}
+                onClick={() => handleFeedback('negative')}
+                disabled={feedbackSent}
+              >
+                👎
+              </button>
+            </div>
+            {feedbackSent && <span className="feedback-message">Thanks for your feedback!</span>}
           </div>
         </div>
       )}
