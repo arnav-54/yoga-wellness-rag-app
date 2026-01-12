@@ -54,15 +54,6 @@ This app uses the latest **Gemini AI models** to provide accurate, safe, and con
 
 ---
 
-### 🔧 Installation
-
-#### 1️⃣ Clone the Repository
-```bash
-git clone https://github.com/arnav-54/yoga-wellness-rag-app.git
-cd yoga-wellness-rag-app
-
-```
-
 Backend Setup
 
 cd backend
@@ -101,4 +92,15 @@ System Testing
 
 cd backend
 node test-suite.js
+
+
+
+### 🔧 Installation
+
+#### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/arnav-54/yoga-wellness-rag-app.git
+cd yoga-wellness-rag-app
+
+```
 
