@@ -15,7 +15,7 @@ class RAGService {
     if (this.initialized) return;
 
     try {
-      const apiKey = process.env.GOOGLE_API_KEY || process.env.GEMINI_API_KEY;
+      const apiKey = (process.env.GOOGLE_API_KEY || process.env.GEMINI_API_KEY)?.trim();
 
       if (!apiKey) {
         throw new Error('GOOGLE_API_KEY environment variable is not set');

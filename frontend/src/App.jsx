@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import './App.css';
 
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || '';
+
 function App() {
   const [question, setQuestion] = useState('');
   const [response, setResponse] = useState(null);
@@ -20,7 +22,7 @@ function App() {
     setFeedbackSent(false);
 
     try {
-      const res = await fetch('http://localhost:3001/ask', {
+      const res = await fetch(`${API_BASE_URL}/ask`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -47,7 +49,7 @@ function App() {
     setFeedback(type);
 
     try {
-      await fetch('http://localhost:3001/feedback', {
+      await fetch(`${API_BASE_URL}/feedback`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

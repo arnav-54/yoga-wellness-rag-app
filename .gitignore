@@ -1,5 +1,27 @@
-node_modules
-.env
-vector-store
+# Common
+node_modules/
 .DS_Store
-npm-debug.log
+*.log
+.env
+.env.local
+.env.*.local
+
+# Backend
+backend/node_modules/
+backend/.env
+backend/vector-store/
+backend/dist/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+
+# Prisma
+backend/prisma/*.db
+backend/prisma/*.db-journal
+
+# Editor
+.vscode/
+.idea/

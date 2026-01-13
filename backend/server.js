@@ -4,13 +4,24 @@ const cors = require('cors');
 const { PrismaClient } = require('@prisma/client');
 const ragService = require('./services/ragService');
 
+const path = require('path');
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 const prisma = new PrismaClient();
 
-app.use(cors());
+const corsOptions = {
+  origin: process.env.FRONTEND_URL || 'http://localhost:5173',
+  optionsSuccessStatus: 200
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
+
+// Serve static files from the React app in production
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, '../frontend/dist')));
+}
 
 function detectUnsafeQuery(question) {
   const keywords = ['pregnancy', 'pregnant', 'surgery', 'hernia', 'glaucoma', 'blood pressure', 'heart'];
@@ -33,7 +44,7 @@ app.post('/ask', async (req, res) => {
 
     const { answer, sources } = await ragService.answerQuestion(question, isUnsafe);
 
-    // Save interaction to MongoDB via Prisma
+
     let interactionId = null;
     try {
       const interaction = await prisma.interaction.create({
@@ -45,10 +56,9 @@ app.post('/ask', async (req, res) => {
         },
       });
       interactionId = interaction.id;
-      console.log(`✅ Stored interaction ${interactionId} in DB`);
+      console.log(`Stored interaction ${interactionId} in DB`);
     } catch (dbError) {
-      console.error('❌ Failed to save interaction to DB:', dbError);
-      // Continue without crashing the request if DB fails
+      console.error('Failed to save interaction to DB:', dbError);
     }
 
     res.json({
@@ -92,11 +102,17 @@ app.post('/feedback', async (req, res) => {
   }
 });
 
+// For any other request, send back index.html in production
+if (process.env.NODE_ENV === 'production') {
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../frontend/dist/index.html'));
+  });
+}
+
 async function startServer() {
   try {
     await ragService.initialize();
 
-    // Check DB connection
     await prisma.$connect();
     console.log('Connected to MongoDB via Prisma');
 

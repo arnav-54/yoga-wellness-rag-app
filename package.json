@@ -1,0 +1,17 @@
+{
+    "name": "yoga-wellness-rag-app",
+    "version": "1.0.0",
+    "scripts": {
+        "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+        "build": "cd frontend && npm install && npm run build && cd ../backend && npm install && npx prisma generate",
+        "start": "cd backend && npm start",
+        "dev:backend": "cd backend && npm run dev",
+        "dev:frontend": "cd frontend && npm run dev",
+        "prisma:generate": "cd backend && npx prisma generate",
+        "prisma:push": "cd backend && npx prisma db push",
+        "ingest": "cd backend && npm run ingest"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    }
+}
